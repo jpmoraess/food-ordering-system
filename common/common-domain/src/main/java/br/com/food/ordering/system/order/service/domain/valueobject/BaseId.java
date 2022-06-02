@@ -1,4 +1,4 @@
-package br.com.food.ordering.system.domain.valueobject;
+package br.com.food.ordering.system.order.service.domain.valueobject;
 
 import java.util.Objects;
 
