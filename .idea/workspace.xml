@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Testing order service domain logic - part 2">
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/common.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/init_kafka.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka_cluster.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/zookeeper.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Running Apache Kafka using Docker">
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/br/com/food/ordering/system/kafka/config/data/KafkaConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/br/com/food/ordering/system/kafka/config/data/KafkaConsumerConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/br/com/food/ordering/system/kafka/config/data/KafkaProducerConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -272,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654282154775</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Running Apache Kafka using Docker">
+      <created>1654287031012</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654287031013</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +318,8 @@
     <MESSAGE value="Implementing Order Track Command Handler" />
     <MESSAGE value="Testing order service domain logic - part 1" />
     <MESSAGE value="Testing order service domain logic - part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing order service domain logic - part 2" />
+    <MESSAGE value="Running Apache Kafka using Docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Running Apache Kafka using Docker" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
