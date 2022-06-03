@@ -3,6 +3,7 @@ package br.com.food.ordering.system.order.service.domain.mapper;
 import br.com.food.ordering.system.order.service.domain.dto.create.CreateOrderCommand;
 import br.com.food.ordering.system.order.service.domain.dto.create.CreateOrderResponse;
 import br.com.food.ordering.system.order.service.domain.dto.create.OrderAddress;
+import br.com.food.ordering.system.order.service.domain.dto.track.TrackOrderResponse;
 import br.com.food.ordering.system.order.service.domain.entity.Order;
 import br.com.food.ordering.system.order.service.domain.entity.OrderItem;
 import br.com.food.ordering.system.order.service.domain.entity.Product;
@@ -39,7 +40,15 @@ public class OrderDataMapper {
         return CreateOrderResponse.builder()
                 .orderTrackingId(order.getTrackingId().getValue())
                 .orderStatus(order.getOrderStatus())
-                .message(message)
+                .message("Order created with successfully")
+                .build();
+    }
+
+    public TrackOrderResponse orderToTrackOrderResponse(Order order) {
+        return TrackOrderResponse.builder()
+                .orderStatus(order.getOrderStatus())
+                .orderTrackingId(order.getTrackingId().getValue())
+                .failureMessages(order.getFailureMessages())
                 .build();
     }
 
