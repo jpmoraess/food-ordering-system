@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Data access module: Adding Customer and Restaurant implementations">
-      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Messaging module: Adding Mapper and Config Data">
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/publisher/kafka/CancelOrderMessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/publisher/kafka/CreateOrderMessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/publisher/kafka/OrderKafkaMessageHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/publisher/kafka/PayOrderKafkaMessagePublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654459958092</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Messaging module: Adding Mapper and Config Data">
+      <created>1654461387187</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1654461387187</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,7 +407,8 @@
     <MESSAGE value="Data access module: Adding Order JPA Entity" />
     <MESSAGE value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
     <MESSAGE value="Data access module: Adding Customer and Restaurant implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding Customer and Restaurant implementations" />
+    <MESSAGE value="Messaging module: Adding Mapper and Config Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Messaging module: Adding Mapper and Config Data" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
