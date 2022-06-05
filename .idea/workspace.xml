@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Data access module: Adding JPA Repository &amp; Adapter implementation">
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/customer/adapter/CustomerRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/customer/entity/CustomerEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/customer/mapper/CustomerDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/customer/repository/CustomerJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/adapter/RestaurantRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntityId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/exception/RestaurantDataAccessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/repository/RestaurantJpaRepository.java" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Data access module: Adding Customer and Restaurant implementations">
+      <change afterPath="$PROJECT_DIR$/order-service/order-messaging/src/main/java/br/com/food/ordering/system/order/service/messaging/mapper/OrderMessagingDataMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/br/com/food/ordering/system/order/service/domain/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/br/com/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654458321716</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Data access module: Adding Customer and Restaurant implementations">
+      <created>1654459958092</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1654459958092</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,7 +396,8 @@
     <MESSAGE value="Application module: Adding Controller Advice" />
     <MESSAGE value="Data access module: Adding Order JPA Entity" />
     <MESSAGE value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
+    <MESSAGE value="Data access module: Adding Customer and Restaurant implementations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Data access module: Adding Customer and Restaurant implementations" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
