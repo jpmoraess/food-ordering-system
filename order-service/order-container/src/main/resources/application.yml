@@ -37,7 +37,7 @@ kafka-config:
 
 kafka-producer-config:
   key-serializer-class: org.apache.kafka.common.serialization.StringSerializer
-  value-serializer-class: org.apache.kafka.common.serializers.KafkaAvroSerializer
+  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
   compression-type: snappy
   acks: all
   batch-size: 16384
@@ -48,7 +48,7 @@ kafka-producer-config:
 
 kafka-consumer-config:
   key-deserializer-class: org.apache.kafka.common.serialization.StringDeserializer
-  value-deserializer-class: org.apache.kafka.common.serializers.KafkaAvroDeserializer
+  value-deserializer-class: io.confluent.kafka.serializers.KafkaAvroDeserializer
   payment-consumer-group-id: payment-topic-consumer
   restaurant-approval-consumer-group-id: restaurant-approval-topic-consumer
   auto-offset-reset: earliest

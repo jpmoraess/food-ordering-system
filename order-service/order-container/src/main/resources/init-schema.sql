@@ -8,7 +8,8 @@ DROP TYPE IF EXISTS order_status;
 CREATE TYPE order_status AS ENUM ('PENDING', 'PAID', 'APPROVED', 'CANCELLED', 'CANCELLING');
 
 -- order
-DROP TABLE IF EXISTS "order".orders;
+DROP TABLE IF EXISTS "order".orders CASCADE;
+
 CREATE TABLE "order".orders
 (
     id uuid NOT NULL,
@@ -42,7 +43,8 @@ ALTER TABLE "order".order_items
     NOT VALID;
 
 -- order_address
-DROP TABLE IF EXISTS "order".order_address
+DROP TABLE IF EXISTS "order".order_address CASCADE;
+
 CREATE TABLE "order".order_address
 (
     id uuid NOT NULL,

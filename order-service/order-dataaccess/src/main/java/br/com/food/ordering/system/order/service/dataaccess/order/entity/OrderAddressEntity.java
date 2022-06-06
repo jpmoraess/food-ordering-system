@@ -15,6 +15,7 @@ import java.util.UUID;
 @Entity
 public class OrderAddressEntity {
 
+    @Id
     private UUID id;
 
     @OneToOne(cascade = CascadeType.ALL)

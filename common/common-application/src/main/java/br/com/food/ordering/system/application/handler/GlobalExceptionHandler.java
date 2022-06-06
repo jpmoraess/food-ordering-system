@@ -26,7 +26,7 @@ public class GlobalExceptionHandler {
                         .build());
     }
 
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(ValidationException.class)
     public ResponseEntity<ErrorDTO> handleException(ValidationException validationException) {
         var status = HttpStatus.BAD_REQUEST;
         log.error(validationException.getMessage(), validationException);
