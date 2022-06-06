@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Creating Customer Service &amp; Running Order Service &amp; fix some implementations">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/entity/CreditEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/entity/CreditHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/valueobject/CreditEntryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/valueobject/CreditHistoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/valueobject/PaymentId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/valueobject/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Domain core module: Adding Aggregate Root, Entity and Value Objects">
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentFailedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/exception/PaymentDomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/exception/PaymentNotFoundException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -408,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654548615950</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Domain core module: Adding Aggregate Root, Entity and Value Objects">
+      <created>1654554176614</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1654554176614</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +427,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding state changing methods to Order Entity" />
     <MESSAGE value="Implementing Domain Events in Order Service domain layer" />
     <MESSAGE value="Implementing Order Domain Service" />
     <MESSAGE value="Adding Mapper classes and ports definitions to Order Application Service" />
@@ -456,7 +451,8 @@
     <MESSAGE value="Container module: Kafka consumer properties" />
     <MESSAGE value="Container module: Adding Order database schema file" />
     <MESSAGE value="Creating Customer Service &amp; Running Order Service &amp; fix some implementations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating Customer Service &amp; Running Order Service &amp; fix some implementations" />
+    <MESSAGE value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
