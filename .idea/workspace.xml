@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Domain core module: Adding Aggregate Root, Entity and Value Objects">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentFailedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/exception/PaymentDomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/exception/PaymentNotFoundException.java" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Domain core module: Adding Exception and Domain events">
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/br/com/food/ordering/system/order/service/domain/DomainConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/PaymentDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/PaymentDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/br/com/food/ordering/system/order/service/domain/OrderDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/br/com/food/ordering/system/order/service/domain/OrderDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.food.ordering.system.payment.service.domain" />
       <recent name="br.com.food.ordering.system.payment.service.domain.valueobject" />
       <recent name="br.com.food.ordering.system.order.service.dataaccess.order.entity" />
       <recent name="br.com.food.ordering.system.service.application.exception.handler" />
@@ -404,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654554176614</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Domain core module: Adding Exception and Domain events">
+      <created>1654554478538</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1654554478538</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Domain Events in Order Service domain layer" />
     <MESSAGE value="Implementing Order Domain Service" />
     <MESSAGE value="Adding Mapper classes and ports definitions to Order Application Service" />
     <MESSAGE value="Implementing input ports in Order Application Service" />
@@ -452,7 +460,8 @@
     <MESSAGE value="Container module: Adding Order database schema file" />
     <MESSAGE value="Creating Customer Service &amp; Running Order Service &amp; fix some implementations" />
     <MESSAGE value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
+    <MESSAGE value="Domain core module: Adding Exception and Domain events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domain core module: Adding Exception and Domain events" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
