@@ -1,10 +1,7 @@
 package br.com.food.ordering.system.payment.service.domain;
 
 import br.com.food.ordering.system.payment.service.domain.dto.PaymentRequest;
-import br.com.food.ordering.system.payment.service.domain.event.PaymentCancelledEvent;
-import br.com.food.ordering.system.payment.service.domain.event.PaymentCompletedEvent;
 import br.com.food.ordering.system.payment.service.domain.event.PaymentEvent;
-import br.com.food.ordering.system.payment.service.domain.event.PaymentFailedEvent;
 import br.com.food.ordering.system.payment.service.domain.ports.input.message.listener.PaymentRequestMessageListener;
 import br.com.food.ordering.system.payment.service.domain.ports.output.message.publisher.PaymentCancelledMessagePublisher;
 import br.com.food.ordering.system.payment.service.domain.ports.output.message.publisher.PaymentCompletedMessagePublisher;
@@ -47,12 +44,6 @@ public class PaymentRequestMessageListenerImpl implements PaymentRequestMessageL
         log.info("Publishing payment event with id: {} and order id: {}",
                 paymentEvent.getPayment().getId().getValue(),
                 paymentEvent.getPayment().getOrderId().getValue());
-        if (paymentEvent instanceof PaymentCompletedEvent) {
-            paymentCompletedMessagePublisher.publish((PaymentCompletedEvent) paymentEvent);
-        } else if (paymentEvent instanceof PaymentCancelledEvent) {
-            paymentCancelledMessagePublisher.publish((PaymentCancelledEvent) paymentEvent);
-        } else if (paymentEvent instanceof PaymentFailedEvent) {
-            paymentFailedMessagePublisher.publish((PaymentFailedEvent) paymentEvent);
-        }
+        paymentEvent.fire();
     }
 }
