@@ -1,10 +1,10 @@
 package br.com.food.ordering.system.service.application.rest;
 
-import br.com.food.ordering.system.order.service.domain.dto.create.CreateOrderCommand;
-import br.com.food.ordering.system.order.service.domain.dto.create.CreateOrderResponse;
-import br.com.food.ordering.system.order.service.domain.dto.track.TrackOrderQuery;
-import br.com.food.ordering.system.order.service.domain.dto.track.TrackOrderResponse;
-import br.com.food.ordering.system.order.service.domain.ports.input.service.OrderApplicationService;
+import br.com.food.ordering.system.domain.dto.create.CreateOrderCommand;
+import br.com.food.ordering.system.domain.dto.create.CreateOrderResponse;
+import br.com.food.ordering.system.domain.dto.track.TrackOrderQuery;
+import br.com.food.ordering.system.domain.dto.track.TrackOrderResponse;
+import br.com.food.ordering.system.domain.ports.input.service.OrderApplicationService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

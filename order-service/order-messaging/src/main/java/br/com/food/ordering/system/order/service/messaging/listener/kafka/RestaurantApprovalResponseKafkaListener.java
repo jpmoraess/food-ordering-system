@@ -3,7 +3,7 @@ package br.com.food.ordering.system.order.service.messaging.listener.kafka;
 import br.com.food.ordering.system.kafka.consumer.KafkaConsumer;
 import br.com.food.ordering.system.kafka.order.avro.model.OrderApprovalStatus;
 import br.com.food.ordering.system.kafka.order.avro.model.RestaurantApprovalResponseAvroModel;
-import br.com.food.ordering.system.order.service.domain.ports.input.message.listener.restaurantapproval.RestaurantApprovalResponseMessageListener;
+import br.com.food.ordering.system.domain.ports.input.message.listener.restaurantapproval.RestaurantApprovalResponseMessageListener;
 import br.com.food.ordering.system.order.service.messaging.mapper.OrderMessagingDataMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-import static br.com.food.ordering.system.order.service.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
+import static br.com.food.ordering.system.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
 
 @Slf4j
 @Component

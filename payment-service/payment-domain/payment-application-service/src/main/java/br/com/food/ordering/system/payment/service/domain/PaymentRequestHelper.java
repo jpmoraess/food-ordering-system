@@ -1,6 +1,6 @@
 package br.com.food.ordering.system.payment.service.domain;
 
-import br.com.food.ordering.system.order.service.domain.valueobject.CustomerId;
+import br.com.food.ordering.system.domain.valueobject.CustomerId;
 import br.com.food.ordering.system.payment.service.domain.dto.PaymentRequest;
 import br.com.food.ordering.system.payment.service.domain.entity.CreditEntry;
 import br.com.food.ordering.system.payment.service.domain.entity.CreditHistory;

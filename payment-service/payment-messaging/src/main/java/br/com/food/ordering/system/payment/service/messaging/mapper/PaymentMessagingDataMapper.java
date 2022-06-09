@@ -3,7 +3,7 @@ package br.com.food.ordering.system.payment.service.messaging.mapper;
 import br.com.food.ordering.system.kafka.order.avro.model.PaymentRequestAvroModel;
 import br.com.food.ordering.system.kafka.order.avro.model.PaymentResponseAvroModel;
 import br.com.food.ordering.system.kafka.order.avro.model.PaymentStatus;
-import br.com.food.ordering.system.order.service.domain.valueobject.PaymentOrderStatus;
+import br.com.food.ordering.system.domain.valueobject.PaymentOrderStatus;
 import br.com.food.ordering.system.payment.service.domain.dto.PaymentRequest;
 import br.com.food.ordering.system.payment.service.domain.event.PaymentCancelledEvent;
 import br.com.food.ordering.system.payment.service.domain.event.PaymentCompletedEvent;

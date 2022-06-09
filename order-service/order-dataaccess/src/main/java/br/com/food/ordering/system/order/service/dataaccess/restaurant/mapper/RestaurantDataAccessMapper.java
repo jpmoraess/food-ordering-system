@@ -2,11 +2,11 @@ package br.com.food.ordering.system.order.service.dataaccess.restaurant.mapper;
 
 import br.com.food.ordering.system.order.service.dataaccess.restaurant.entity.RestaurantEntity;
 import br.com.food.ordering.system.order.service.dataaccess.restaurant.exception.RestaurantDataAccessException;
-import br.com.food.ordering.system.order.service.domain.entity.Product;
-import br.com.food.ordering.system.order.service.domain.entity.Restaurant;
-import br.com.food.ordering.system.order.service.domain.valueobject.Money;
-import br.com.food.ordering.system.order.service.domain.valueobject.ProductId;
-import br.com.food.ordering.system.order.service.domain.valueobject.RestaurantId;
+import br.com.food.ordering.system.domain.entity.Product;
+import br.com.food.ordering.system.domain.entity.Restaurant;
+import br.com.food.ordering.system.domain.valueobject.Money;
+import br.com.food.ordering.system.domain.valueobject.ProductId;
+import br.com.food.ordering.system.domain.valueobject.RestaurantId;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

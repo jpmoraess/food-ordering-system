@@ -3,8 +3,8 @@ package br.com.food.ordering.system.order.service.dataaccess.restaurant.adapter;
 import br.com.food.ordering.system.order.service.dataaccess.restaurant.entity.RestaurantEntity;
 import br.com.food.ordering.system.order.service.dataaccess.restaurant.mapper.RestaurantDataAccessMapper;
 import br.com.food.ordering.system.order.service.dataaccess.restaurant.repository.RestaurantJpaRepository;
-import br.com.food.ordering.system.order.service.domain.entity.Restaurant;
-import br.com.food.ordering.system.order.service.domain.ports.output.repository.RestaurantRepository;
+import br.com.food.ordering.system.domain.entity.Restaurant;
+import br.com.food.ordering.system.domain.ports.output.repository.RestaurantRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

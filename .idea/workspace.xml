@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing Messaging module: Adding Mapper and Publishers">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/src/main/java/br/com/food/ordering/system/payment/service/messaging/listener/kafka/PaymentRequestKafkaListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing Messaging module: Adding Listeners" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -461,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654733932654</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Implementing Messaging module: Adding Listeners">
+      <created>1654734695976</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1654734695976</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Running Apache Kafka using Docker" />
     <MESSAGE value="Implementing Kafka config data generic module" />
     <MESSAGE value="Implementing Kafka model generic module" />
     <MESSAGE value="Implementing Kafka producer generic module" />
@@ -509,7 +512,8 @@
     <MESSAGE value="Application Service domain module: Refactoring fire event process" />
     <MESSAGE value="Implementing Payment Data Access Module" />
     <MESSAGE value="Implementing Messaging module: Adding Mapper and Publishers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Messaging module: Adding Mapper and Publishers" />
+    <MESSAGE value="Implementing Messaging module: Adding Listeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Messaging module: Adding Listeners" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

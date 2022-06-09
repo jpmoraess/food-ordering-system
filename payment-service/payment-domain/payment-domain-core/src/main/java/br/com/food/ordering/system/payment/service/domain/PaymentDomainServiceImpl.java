@@ -1,8 +1,8 @@
 package br.com.food.ordering.system.payment.service.domain;
 
-import br.com.food.ordering.system.order.service.domain.event.publisher.DomainEventPublisher;
-import br.com.food.ordering.system.order.service.domain.valueobject.Money;
-import br.com.food.ordering.system.order.service.domain.valueobject.PaymentStatus;
+import br.com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
+import br.com.food.ordering.system.domain.valueobject.Money;
+import br.com.food.ordering.system.domain.valueobject.PaymentStatus;
 import br.com.food.ordering.system.payment.service.domain.entity.CreditEntry;
 import br.com.food.ordering.system.payment.service.domain.entity.CreditHistory;
 import br.com.food.ordering.system.payment.service.domain.entity.Payment;
@@ -19,7 +19,7 @@ import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.UUID;
 
-import static br.com.food.ordering.system.order.service.domain.DomainConstants.UTC;
+import static br.com.food.ordering.system.domain.DomainConstants.UTC;
 
 @Slf4j
 public class PaymentDomainServiceImpl implements PaymentDomainService {

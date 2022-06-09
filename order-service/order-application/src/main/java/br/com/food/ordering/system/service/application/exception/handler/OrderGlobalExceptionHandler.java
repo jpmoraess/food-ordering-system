@@ -2,8 +2,8 @@ package br.com.food.ordering.system.service.application.exception.handler;
 
 import br.com.food.ordering.system.application.handler.ErrorDTO;
 import br.com.food.ordering.system.application.handler.GlobalExceptionHandler;
-import br.com.food.ordering.system.order.service.domain.exception.OrderDomainException;
-import br.com.food.ordering.system.order.service.domain.exception.OrderNotFoundException;
+import br.com.food.ordering.system.domain.exception.OrderDomainException;
+import br.com.food.ordering.system.domain.exception.OrderNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

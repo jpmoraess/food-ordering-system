@@ -2,9 +2,9 @@ package br.com.food.ordering.system.order.service.dataaccess.order.adapter;
 
 import br.com.food.ordering.system.order.service.dataaccess.order.mapper.OrderDataAccessMapper;
 import br.com.food.ordering.system.order.service.dataaccess.order.repository.OrderJpaRepository;
-import br.com.food.ordering.system.order.service.domain.entity.Order;
-import br.com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
-import br.com.food.ordering.system.order.service.domain.valueobject.TrackingId;
+import br.com.food.ordering.system.domain.entity.Order;
+import br.com.food.ordering.system.domain.ports.output.repository.OrderRepository;
+import br.com.food.ordering.system.domain.valueobject.TrackingId;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
