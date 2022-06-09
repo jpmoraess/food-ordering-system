@@ -1,6 +1,7 @@
 package br.com.food.ordering.system.order.service.messaging.publisher.kafka;
 
 import br.com.food.ordering.system.kafka.order.avro.model.PaymentRequestAvroModel;
+import br.com.food.ordering.system.kafka.producer.KafkaMessageHelper;
 import br.com.food.ordering.system.kafka.producer.service.KafkaProducer;
 import br.com.food.ordering.system.order.service.domain.config.OrderServiceConfigData;
 import br.com.food.ordering.system.order.service.domain.event.OrderCancelledEvent;
@@ -16,12 +17,12 @@ public class CancelOrderMessagePublisher implements OrderCancelledPaymentRequest
     private final OrderMessagingDataMapper orderMessagingDataMapper;
     private final OrderServiceConfigData orderServiceConfigData;
     private final KafkaProducer<String, PaymentRequestAvroModel> kafkaProducer;
-    private final OrderKafkaMessageHelper orderKafkaMessageHelper;
+    private final KafkaMessageHelper orderKafkaMessageHelper;
 
     public CancelOrderMessagePublisher(OrderMessagingDataMapper orderMessagingDataMapper,
                                        OrderServiceConfigData orderServiceConfigData,
                                        KafkaProducer<String, PaymentRequestAvroModel> kafkaProducer,
-                                       OrderKafkaMessageHelper orderKafkaMessageHelper) {
+                                       KafkaMessageHelper orderKafkaMessageHelper) {
         this.orderMessagingDataMapper = orderMessagingDataMapper;
         this.orderServiceConfigData = orderServiceConfigData;
         this.kafkaProducer = kafkaProducer;

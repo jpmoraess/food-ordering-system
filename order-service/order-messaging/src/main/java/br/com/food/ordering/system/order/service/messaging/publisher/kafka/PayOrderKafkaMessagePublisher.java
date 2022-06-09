@@ -1,6 +1,7 @@
 package br.com.food.ordering.system.order.service.messaging.publisher.kafka;
 
 import br.com.food.ordering.system.kafka.order.avro.model.RestaurantApprovalRequestAvroModel;
+import br.com.food.ordering.system.kafka.producer.KafkaMessageHelper;
 import br.com.food.ordering.system.kafka.producer.service.KafkaProducer;
 import br.com.food.ordering.system.order.service.domain.config.OrderServiceConfigData;
 import br.com.food.ordering.system.order.service.domain.event.OrderPaidEvent;
@@ -16,12 +17,12 @@ public class PayOrderKafkaMessagePublisher implements OrderPaidRestaurantRequest
     private final OrderMessagingDataMapper orderMessagingDataMapper;
     private final OrderServiceConfigData orderServiceConfigData;
     private final KafkaProducer<String, RestaurantApprovalRequestAvroModel> kafkaProducer;
-    private final OrderKafkaMessageHelper orderKafkaMessageHelper;
+    private final KafkaMessageHelper orderKafkaMessageHelper;
 
     public PayOrderKafkaMessagePublisher(OrderMessagingDataMapper orderMessagingDataMapper,
                                          OrderServiceConfigData orderServiceConfigData,
                                          KafkaProducer<String, RestaurantApprovalRequestAvroModel> kafkaProducer,
-                                         OrderKafkaMessageHelper orderKafkaMessageHelper) {
+                                         KafkaMessageHelper orderKafkaMessageHelper) {
         this.orderMessagingDataMapper = orderMessagingDataMapper;
         this.orderServiceConfigData = orderServiceConfigData;
         this.kafkaProducer = kafkaProducer;

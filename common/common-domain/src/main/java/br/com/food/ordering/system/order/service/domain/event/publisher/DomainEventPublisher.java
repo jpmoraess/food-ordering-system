@@ -2,7 +2,7 @@ package br.com.food.ordering.system.order.service.domain.event.publisher;
 
 import br.com.food.ordering.system.order.service.domain.event.DomainEvent;
 
-public interface DomainEventPublisher<T> extends DomainEvent<T> {
+public interface DomainEventPublisher<T extends DomainEvent> {
 
     void publish(T domainEvent);
 }
