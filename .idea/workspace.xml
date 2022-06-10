@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing Messaging module: Adding Listeners" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Fix package name">
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/br/com/food/ordering/system/paymen/service/domain/BeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/br/com/food/ordering/system/paymen/service/domain/PaymentServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,9 +52,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "temurin-17",
     "last_opened_file_path": "/home/moraesit/IdeaProjects/food-ordering-system/payment-service/payment-dataaccess/src/main/java/br/com/food/ordering/system/payment/service/dataaccess/credithistory",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -465,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654734695976</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Fix package name">
+      <created>1654735341656</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1654735341656</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -488,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Kafka config data generic module" />
     <MESSAGE value="Implementing Kafka model generic module" />
     <MESSAGE value="Implementing Kafka producer generic module" />
     <MESSAGE value="Implementing Kafka consumer generic module" />
@@ -513,7 +528,8 @@
     <MESSAGE value="Implementing Payment Data Access Module" />
     <MESSAGE value="Implementing Messaging module: Adding Mapper and Publishers" />
     <MESSAGE value="Implementing Messaging module: Adding Listeners" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Messaging module: Adding Listeners" />
+    <MESSAGE value="Fix package name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix package name" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
