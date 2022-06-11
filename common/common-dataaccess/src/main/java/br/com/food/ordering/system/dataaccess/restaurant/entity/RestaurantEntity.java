@@ -1,4 +1,4 @@
-package br.com.food.ordering.system.order.service.dataaccess.restaurant.entity;
+package br.com.food.ordering.system.dataaccess.restaurant.entity;
 
 import lombok.*;
 
@@ -30,4 +30,5 @@ public class RestaurantEntity {
     private Boolean restaurantActive;
     private String productName;
     private BigDecimal productPrice;
+    private Boolean productAvailable;
 }

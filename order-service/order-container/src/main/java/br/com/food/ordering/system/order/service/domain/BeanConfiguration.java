@@ -1,5 +1,7 @@
-package br.com.food.ordering.system.domain;
+package br.com.food.ordering.system.order.service.domain;
 
+import br.com.food.ordering.system.domain.OrderDomainService;
+import br.com.food.ordering.system.domain.OrderDomainServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
