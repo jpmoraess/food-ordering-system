@@ -4,26 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Application Service domain module: Implementing Input Ports">
-      <change afterPath="$PROJECT_DIR$/common/common-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/br/com/food/ordering/system/restaurant/service/dataaccess/restaurant/adapter/OrderApprovalRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/br/com/food/ordering/system/restaurant/service/dataaccess/restaurant/entity/OrderApprovalEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/br/com/food/ordering/system/restaurant/service/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/src/main/java/br/com/food/ordering/system/restaurant/service/dataaccess/restaurant/repository/OrderApprovalJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing Data Access Module">
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/br/com/food/ordering/system/restaurant/service/messaging/listener/kafka/RestaurantApprovalRequestKafkaListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/br/com/food/ordering/system/restaurant/service/messaging/mapper/RestaurantMessagingDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/br/com/food/ordering/system/restaurant/service/messaging/publisher/kafka/OrderApprovedKafkaMessagePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/src/main/java/br/com/food/ordering/system/restaurant/service/messaging/publisher/kafka/OrderRejectedKafkaMessagePublisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-container/src/main/java/br/com/food/ordering/system/domain/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/src/main/java/br/com/food/ordering/system/order/service/domain/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-container/src/main/java/br/com/food/ordering/system/domain/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/src/main/java/br/com/food/ordering/system/order/service/domain/OrderServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/adapter/RestaurantRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/adapter/RestaurantRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-dataaccess/src/main/java/br/com/food/ordering/system/dataaccess/restaurant/entity/RestaurantEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/entity/RestaurantEntityId.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-dataaccess/src/main/java/br/com/food/ordering/system/dataaccess/restaurant/entity/RestaurantEntityId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/exception/RestaurantDataAccessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-dataaccess/src/main/java/br/com/food/ordering/system/dataaccess/restaurant/exception/RestaurantDataAccessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/mapper/RestaurantDataAccessMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/br/com/food/ordering/system/order/service/dataaccess/restaurant/repository/RestaurantJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-dataaccess/src/main/java/br/com/food/ordering/system/dataaccess/restaurant/repository/RestaurantJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654134579143</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Creating order service modules using clean architecture - part 2">
-      <created>1654137185009</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1654137185009</updated>
     </task>
     <task id="LOCAL-00003" summary="Creating common domain module with base Entity and Aggregate Root classes">
       <created>1654178930580</created>
@@ -523,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654912940551</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Implementing Data Access Module">
+      <created>1654974669141</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1654974669141</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Data access module: Adding Order JPA Entity" />
     <MESSAGE value="Data access module: Adding JPA Repository &amp; Adapter implementation" />
     <MESSAGE value="Data access module: Adding Customer and Restaurant implementations" />
     <MESSAGE value="Messaging module: Adding Mapper and Config Data" />
@@ -571,7 +557,8 @@
     <MESSAGE value="Domain core module: Adding Exception, Domain Events and Domain Service" />
     <MESSAGE value="Application Service domain module: Adding Mapper, DTO and Ports" />
     <MESSAGE value="Application Service domain module: Implementing Input Ports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Application Service domain module: Implementing Input Ports" />
+    <MESSAGE value="Implementing Data Access Module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Data Access Module" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
