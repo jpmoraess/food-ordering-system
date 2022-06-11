@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Fix package name">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/br/com/food/ordering/system/paymen/service/domain/BeanConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/java/br/com/food/ordering/system/paymen/service/domain/PaymentServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-schema.sql" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing container module">
+      <change afterPath="$PROJECT_DIR$/restaurant-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/OrderApproval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/valueobject/OrderApprovalId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "/home/moraesit/IdeaProjects/food-ordering-system/payment-service/payment-dataaccess/src/main/java/br/com/food/ordering/system/payment/service/dataaccess/credithistory",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/moraesit/IdeaProjects/food-ordering-system/payment-service/payment-dataaccess/src/main/java/br/com/food/ordering/system/payment/service/dataaccess/credithistory&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.food.ordering.system.payment.service.domain" />
@@ -481,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654735341656</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Implementing container module">
+      <created>1654828028288</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1654828028289</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -504,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Kafka model generic module" />
     <MESSAGE value="Implementing Kafka producer generic module" />
     <MESSAGE value="Implementing Kafka consumer generic module" />
     <MESSAGE value="Application module: Adding Web Controller" />
@@ -529,7 +542,8 @@
     <MESSAGE value="Implementing Messaging module: Adding Mapper and Publishers" />
     <MESSAGE value="Implementing Messaging module: Adding Listeners" />
     <MESSAGE value="Fix package name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix package name" />
+    <MESSAGE value="Implementing container module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing container module" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
