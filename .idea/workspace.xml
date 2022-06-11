@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing container module">
-      <change afterPath="$PROJECT_DIR$/restaurant-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-application-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/OrderApproval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/entity/Restaurant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/valueobject/OrderApprovalId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-messaging/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Domain core module: Adding Aggregate Root and Entities">
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/RestaurantDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/RestaurantDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/event/OrderApprovalEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/event/OrderApprovedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/event/OrderRejectedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/exception/RestaurantDomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restaurant-service/restaurant-domain/restaurant-domain-core/src/main/java/br/com/food/ordering/system/restaurant/service/domain/exception/RestaurantNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +60,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.food.ordering.system.restaurant.service.domain" />
       <recent name="br.com.food.ordering.system.payment.service.domain" />
       <recent name="br.com.food.ordering.system.payment.service.domain.valueobject" />
       <recent name="br.com.food.ordering.system.order.service.dataaccess.order.entity" />
       <recent name="br.com.food.ordering.system.service.application.exception.handler" />
-      <recent name="br.com.food.ordering.system.order.service.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java/br/com/food/ordering/system/payment/service/dataaccess/credithistory" />
@@ -495,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654828028289</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Domain core module: Adding Aggregate Root and Entities">
+      <created>1654908312599</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1654908312599</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing Kafka producer generic module" />
     <MESSAGE value="Implementing Kafka consumer generic module" />
     <MESSAGE value="Application module: Adding Web Controller" />
     <MESSAGE value="Application module: Adding Controller Advice" />
@@ -543,7 +542,8 @@
     <MESSAGE value="Implementing Messaging module: Adding Listeners" />
     <MESSAGE value="Fix package name" />
     <MESSAGE value="Implementing container module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing container module" />
+    <MESSAGE value="Domain core module: Adding Aggregate Root and Entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domain core module: Adding Aggregate Root and Entities" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
