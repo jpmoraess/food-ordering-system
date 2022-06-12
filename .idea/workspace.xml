@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Implementing Container Module and Refactor Packages">
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Refactor schemas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-container/src/main/resources/init-schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant-service/restaurant-container/src/main/resources/init-schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/docker-compose/kafka_cluster.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka_cluster.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/br/com/food/ordering/system/kafka/config/data/KafkaProducerConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/br/com/food/ordering/system/kafka/config/data/KafkaProducerConfigData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/PaymentDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/PaymentDomainServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "temurin-17",
-    "last_opened_file_path": "/home/moraesit/IdeaProjects/food-ordering-system/common/common-dataaccess/src/main/java/br/com/food/ordering/system/dataaccess/restaurant/entity",
+    "last_opened_file_path": "/home/moraesit/Downloads/food-ordering-system",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -73,7 +74,7 @@
       <recent name="br.com.food.ordering.system.payment.service.messaging.publisher.kafka" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RestaurantServiceApplication">
+  <component name="RunManager" selected="Application.CustomerServiceApplication">
     <configuration name="CustomerServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.food.ordering.system.customer.service.CustomerServiceApplication" />
       <module name="customer-service" />
@@ -142,10 +143,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RestaurantServiceApplication" />
-        <item itemvalue="Application.PaymentServiceApplication" />
-        <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
+        <item itemvalue="Application.PaymentServiceApplication" />
+        <item itemvalue="Application.RestaurantServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="JUnit.br.com.food.ordering.system.order.service.domain in order-application-service" />
       </list>
     </recent_temporary>
@@ -158,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654134579143</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Implementing Order Service domain logic using DDD - Order Aggregate Root">
-      <created>1654181841288</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1654181841288</updated>
     </task>
     <task id="LOCAL-00006" summary="Adding order entity implementation methods">
       <created>1654187771416</created>
@@ -502,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654999608140</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Refactor schemas">
+      <created>1655001275486</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1655001275486</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Messaging module: Adding Mapper and Config Data" />
     <MESSAGE value="Messaging module: Adding Publisher implementations" />
     <MESSAGE value="Messaging module: Adding Listener implementations" />
     <MESSAGE value="Container module: Adding Spring Boot Starter Class and Config" />
@@ -550,7 +550,8 @@
     <MESSAGE value="Implementing Data Access Module" />
     <MESSAGE value="Implementing Messaging Module" />
     <MESSAGE value="Implementing Container Module and Refactor Packages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing Container Module and Refactor Packages" />
+    <MESSAGE value="Refactor schemas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor schemas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
