@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga">
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="fix order failure messages and payment credit logic">
+      <change afterPath="$PROJECT_DIR$/infrastructure/outbox/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/outbox/src/main/java/br/com/food/ordering/system/outbox/OutboxStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/saga/src/main/java/br/com/food/ordering/system/saga/SagaStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/PaymentDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/br/com/food/ordering/system/payment/service/domain/PaymentDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-container/src/main/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/src/main/resources/init-schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,16 +22,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="before-outbox" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="JUnit.br.com.food.ordering.system.order.service.domain in order-application-service" />
         <item itemvalue="Application.RestaurantServiceApplication" />
         <item itemvalue="Application.PaymentServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
         <item itemvalue="Application.CustomerServiceApplication" />
-        <item itemvalue="JUnit.br.com.food.ordering.system.order.service.domain in order-application-service" />
       </list>
     </recent_temporary>
   </component>
@@ -157,13 +163,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654134579143</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Implementing Order Domain Service">
-      <created>1654191917232</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1654191917232</updated>
     </task>
     <task id="LOCAL-00010" summary="Adding Mapper classes and ports definitions to Order Application Service">
       <created>1654267021611</created>
@@ -501,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655061584376</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="fix order failure messages and payment credit logic">
+      <created>1655064502842</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1655064502842</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,7 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Container module: Kafka consumer properties" />
     <MESSAGE value="Container module: Adding Order database schema file" />
     <MESSAGE value="Creating Customer Service &amp; Running Order Service &amp; fix some implementations" />
     <MESSAGE value="Domain core module: Adding Aggregate Root, Entity and Value Objects" />
@@ -549,7 +554,8 @@
     <MESSAGE value="bug fixes" />
     <MESSAGE value="Implementing Order Payment Saga" />
     <MESSAGE value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using Order Payment Saga in Messaging &amp; Implementing Order Approval Saga" />
+    <MESSAGE value="fix order failure messages and payment credit logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix order failure messages and payment credit logic" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
