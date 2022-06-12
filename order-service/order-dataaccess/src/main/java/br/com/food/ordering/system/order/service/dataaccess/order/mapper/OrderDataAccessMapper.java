@@ -29,7 +29,7 @@ public class OrderDataAccessMapper {
                 .price(order.getPrice().getAmount())
                 .items(orderItemsToOrderItemEntities(order.getItems()))
                 .orderStatus(order.getOrderStatus())
-                .failureMessages(order.getFailureMessages() != null ? String.join(FAILURE_MESSAGE_DELIMITER) : "")
+                .failureMessages(order.getFailureMessages() != null ? String.join(FAILURE_MESSAGE_DELIMITER, order.getFailureMessages()) : "")
                 .build();
         orderEntity.getAddress().setOrder(orderEntity);
         orderEntity.getItems().forEach(orderItemEntity -> orderItemEntity.setOrder(orderEntity));
