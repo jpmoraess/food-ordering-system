@@ -2,7 +2,7 @@ DROP SCHEMA IF EXISTS restaurant CASCADE;
 
 CREATE SCHEMA restaurant;
 
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 DROP TABLE IF EXISTS restaurant.restaurants CASCADE;
 
@@ -40,7 +40,7 @@ CREATE TABLE restaurant.products
     CONSTRAINT products_pkey PRIMARY KEY (id)
 );
 
-CREATE TABLE IF EXISTS restaurant.restaurant_products CASCADE;
+DROP TABLE IF EXISTS restaurant.restaurant_products CASCADE;
 
 CREATE TABLE restaurant.restaurant_products
 (
@@ -64,7 +64,7 @@ ALTER TABLE restaurant.restaurant_products
     ON DELETE RESTRICT
     NOT VALID;
 
-DROP MATERIALIZED VIEW restaurant.order_restaurant_m_view;
+DROP MATERIALIZED VIEW IF EXISTS restaurant.order_restaurant_m_view;
 
 CREATE MATERIALIZED VIEW restaurant.order_restaurant_m_view
 TABLESPACE pg_default
@@ -87,7 +87,7 @@ refresh materialized VIEW restaurant.order_restaurant_m_view;
 DROP function IF EXISTS restaurant.refresh_order_restaurant_m_view;
 
 CREATE OR replace function restaurant.refresh_order_restaurant_m_view()
-return trigger
+returns trigger
 AS '
 BEGIN
     refresh materialized VIEW restaurant.order_restaurant_m_view;
