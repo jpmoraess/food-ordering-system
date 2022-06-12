@@ -1,7 +1,7 @@
 package br.com.food.ordering.system.restaurant.service.domain;
 
-import br.com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
-import br.com.food.ordering.system.domain.valueobject.OrderApprovalStatus;
+import br.com.food.ordering.system.order.service.domain.event.publisher.DomainEventPublisher;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderApprovalStatus;
 import br.com.food.ordering.system.restaurant.service.domain.entity.Restaurant;
 import br.com.food.ordering.system.restaurant.service.domain.event.OrderApprovalEvent;
 import br.com.food.ordering.system.restaurant.service.domain.event.OrderApprovedEvent;
@@ -12,7 +12,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-import static br.com.food.ordering.system.domain.DomainConstants.UTC;
+import static br.com.food.ordering.system.order.service.domain.DomainConstants.UTC;
 
 @Slf4j
 public class RestaurantDomainServiceImpl implements RestaurantDomainService {

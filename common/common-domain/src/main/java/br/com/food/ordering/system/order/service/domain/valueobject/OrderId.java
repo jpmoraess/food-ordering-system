@@ -1,0 +1,9 @@
+package br.com.food.ordering.system.order.service.domain.valueobject;
+
+import java.util.UUID;
+
+public class OrderId extends BaseId<UUID> {
+    public OrderId(UUID value) {
+        super(value);
+    }
+}

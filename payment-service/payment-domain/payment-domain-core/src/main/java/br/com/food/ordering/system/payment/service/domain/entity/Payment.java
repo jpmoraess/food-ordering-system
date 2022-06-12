@@ -1,10 +1,10 @@
 package br.com.food.ordering.system.payment.service.domain.entity;
 
-import br.com.food.ordering.system.domain.entity.AggregateRoot;
-import br.com.food.ordering.system.domain.valueobject.CustomerId;
-import br.com.food.ordering.system.domain.valueobject.Money;
-import br.com.food.ordering.system.domain.valueobject.OrderId;
-import br.com.food.ordering.system.domain.valueobject.PaymentStatus;
+import br.com.food.ordering.system.order.service.domain.entity.AggregateRoot;
+import br.com.food.ordering.system.order.service.domain.valueobject.CustomerId;
+import br.com.food.ordering.system.order.service.domain.valueobject.Money;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderId;
+import br.com.food.ordering.system.order.service.domain.valueobject.PaymentStatus;
 import br.com.food.ordering.system.payment.service.domain.valueobject.PaymentId;
 
 import java.time.ZoneId;

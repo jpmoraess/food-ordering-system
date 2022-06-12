@@ -2,8 +2,8 @@ package br.com.food.ordering.system.order.service.dataaccess.customer.adapter;
 
 import br.com.food.ordering.system.order.service.dataaccess.customer.mapper.CustomerDataAccessMapper;
 import br.com.food.ordering.system.order.service.dataaccess.customer.repository.CustomerJpaRepository;
-import br.com.food.ordering.system.domain.entity.Customer;
-import br.com.food.ordering.system.domain.ports.output.repository.CustomerRepository;
+import br.com.food.ordering.system.order.service.domain.entity.Customer;
+import br.com.food.ordering.system.order.service.domain.ports.output.repository.CustomerRepository;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;

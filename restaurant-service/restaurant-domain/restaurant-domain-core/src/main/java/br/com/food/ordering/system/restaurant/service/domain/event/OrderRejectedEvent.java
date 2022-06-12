@@ -1,7 +1,7 @@
 package br.com.food.ordering.system.restaurant.service.domain.event;
 
-import br.com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
-import br.com.food.ordering.system.domain.valueobject.RestaurantId;
+import br.com.food.ordering.system.order.service.domain.event.publisher.DomainEventPublisher;
+import br.com.food.ordering.system.order.service.domain.valueobject.RestaurantId;
 import br.com.food.ordering.system.restaurant.service.domain.entity.OrderApproval;
 
 import java.time.ZonedDateTime;

@@ -2,10 +2,10 @@ package br.com.food.ordering.system.restaurant.service.dataaccess.restaurant.map
 
 import br.com.food.ordering.system.dataaccess.restaurant.entity.RestaurantEntity;
 import br.com.food.ordering.system.dataaccess.restaurant.exception.RestaurantDataAccessException;
-import br.com.food.ordering.system.domain.valueobject.Money;
-import br.com.food.ordering.system.domain.valueobject.OrderId;
-import br.com.food.ordering.system.domain.valueobject.ProductId;
-import br.com.food.ordering.system.domain.valueobject.RestaurantId;
+import br.com.food.ordering.system.order.service.domain.valueobject.Money;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderId;
+import br.com.food.ordering.system.order.service.domain.valueobject.ProductId;
+import br.com.food.ordering.system.order.service.domain.valueobject.RestaurantId;
 import br.com.food.ordering.system.restaurant.service.dataaccess.restaurant.entity.OrderApprovalEntity;
 import br.com.food.ordering.system.restaurant.service.domain.entity.OrderApproval;
 import br.com.food.ordering.system.restaurant.service.domain.entity.OrderDetail;

@@ -1,9 +1,9 @@
 package br.com.food.ordering.system.restaurant.service.domain.entity;
 
-import br.com.food.ordering.system.domain.entity.BaseEntity;
-import br.com.food.ordering.system.domain.valueobject.Money;
-import br.com.food.ordering.system.domain.valueobject.OrderId;
-import br.com.food.ordering.system.domain.valueobject.OrderStatus;
+import br.com.food.ordering.system.order.service.domain.entity.BaseEntity;
+import br.com.food.ordering.system.order.service.domain.valueobject.Money;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderId;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderStatus;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
 package br.com.food.ordering.system.payment.service.dataaccess.payment.mapper;
 
-import br.com.food.ordering.system.domain.valueobject.CustomerId;
-import br.com.food.ordering.system.domain.valueobject.Money;
-import br.com.food.ordering.system.domain.valueobject.OrderId;
+import br.com.food.ordering.system.order.service.domain.valueobject.CustomerId;
+import br.com.food.ordering.system.order.service.domain.valueobject.Money;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderId;
 import br.com.food.ordering.system.payment.service.dataaccess.payment.entity.PaymentEntity;
 import br.com.food.ordering.system.payment.service.domain.entity.Payment;
 import br.com.food.ordering.system.payment.service.domain.valueobject.PaymentId;

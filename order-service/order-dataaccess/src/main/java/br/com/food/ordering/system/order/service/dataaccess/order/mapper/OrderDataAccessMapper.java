@@ -1,12 +1,12 @@
 package br.com.food.ordering.system.order.service.dataaccess.order.mapper;
 
-import br.com.food.ordering.system.domain.valueobject.*;
 import br.com.food.ordering.system.order.service.dataaccess.order.entity.OrderAddressEntity;
 import br.com.food.ordering.system.order.service.dataaccess.order.entity.OrderEntity;
 import br.com.food.ordering.system.order.service.dataaccess.order.entity.OrderItemEntity;
-import br.com.food.ordering.system.domain.entity.Order;
-import br.com.food.ordering.system.domain.entity.OrderItem;
-import br.com.food.ordering.system.domain.entity.Product;
+import br.com.food.ordering.system.order.service.domain.entity.Order;
+import br.com.food.ordering.system.order.service.domain.entity.OrderItem;
+import br.com.food.ordering.system.order.service.domain.entity.Product;
+import br.com.food.ordering.system.order.service.domain.valueobject.*;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static br.com.food.ordering.system.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
+import static br.com.food.ordering.system.order.service.domain.entity.Order.FAILURE_MESSAGE_DELIMITER;
 
 @Component
 public class OrderDataAccessMapper {

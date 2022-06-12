@@ -1,6 +1,6 @@
 package br.com.food.ordering.system.restaurant.service.domain;
 
-import br.com.food.ordering.system.domain.valueobject.OrderId;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderId;
 import br.com.food.ordering.system.restaurant.service.domain.dto.RestaurantApprovalRequest;
 import br.com.food.ordering.system.restaurant.service.domain.entity.Restaurant;
 import br.com.food.ordering.system.restaurant.service.domain.event.OrderApprovalEvent;

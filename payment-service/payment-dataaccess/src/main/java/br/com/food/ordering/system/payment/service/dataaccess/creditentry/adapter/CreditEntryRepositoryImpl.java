@@ -1,6 +1,6 @@
 package br.com.food.ordering.system.payment.service.dataaccess.creditentry.adapter;
 
-import br.com.food.ordering.system.domain.valueobject.CustomerId;
+import br.com.food.ordering.system.order.service.domain.valueobject.CustomerId;
 import br.com.food.ordering.system.payment.service.dataaccess.creditentry.mapper.CreditEntryDataAccessMapper;
 import br.com.food.ordering.system.payment.service.dataaccess.creditentry.repository.CreditEntryJpaRepository;
 import br.com.food.ordering.system.payment.service.domain.entity.CreditEntry;

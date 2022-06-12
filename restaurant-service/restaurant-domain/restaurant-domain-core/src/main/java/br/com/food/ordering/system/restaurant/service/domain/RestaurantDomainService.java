@@ -1,6 +1,6 @@
 package br.com.food.ordering.system.restaurant.service.domain;
 
-import br.com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
+import br.com.food.ordering.system.order.service.domain.event.publisher.DomainEventPublisher;
 import br.com.food.ordering.system.restaurant.service.domain.entity.Restaurant;
 import br.com.food.ordering.system.restaurant.service.domain.event.OrderApprovalEvent;
 import br.com.food.ordering.system.restaurant.service.domain.event.OrderApprovedEvent;
