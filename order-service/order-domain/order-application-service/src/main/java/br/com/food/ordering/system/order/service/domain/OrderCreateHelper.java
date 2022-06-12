@@ -7,7 +7,6 @@ import br.com.food.ordering.system.order.service.domain.entity.Restaurant;
 import br.com.food.ordering.system.order.service.domain.event.OrderCreatedEvent;
 import br.com.food.ordering.system.order.service.domain.exception.OrderDomainException;
 import br.com.food.ordering.system.order.service.domain.mapper.OrderDataMapper;
-import br.com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCreatedPaymentRequestMessagePublisher;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.CustomerRepository;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.RestaurantRepository;

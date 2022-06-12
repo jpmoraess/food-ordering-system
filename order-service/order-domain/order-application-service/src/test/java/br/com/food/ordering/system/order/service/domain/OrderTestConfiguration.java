@@ -1,8 +1,5 @@
 package br.com.food.ordering.system.order.service.domain;
 
-import br.com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCancelledPaymentRequestMessagePublisher;
-import br.com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCreatedPaymentRequestMessagePublisher;
-import br.com.food.ordering.system.order.service.domain.ports.output.message.publisher.restaurantapproval.OrderPaidRestaurantRequestMessagePublisher;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.CustomerRepository;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.OrderRepository;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.RestaurantRepository;

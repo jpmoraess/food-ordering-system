@@ -4,7 +4,6 @@ import br.com.food.ordering.system.order.service.domain.dto.message.RestaurantAp
 import br.com.food.ordering.system.order.service.domain.entity.Order;
 import br.com.food.ordering.system.order.service.domain.event.EmptyEvent;
 import br.com.food.ordering.system.order.service.domain.event.OrderCancelledEvent;
-import br.com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCancelledPaymentRequestMessagePublisher;
 import br.com.food.ordering.system.saga.SagaStep;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

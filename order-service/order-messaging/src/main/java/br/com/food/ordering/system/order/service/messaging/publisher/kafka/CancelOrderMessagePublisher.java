@@ -5,14 +5,14 @@ import br.com.food.ordering.system.kafka.producer.KafkaMessageHelper;
 import br.com.food.ordering.system.kafka.producer.service.KafkaProducer;
 import br.com.food.ordering.system.order.service.domain.config.OrderServiceConfigData;
 import br.com.food.ordering.system.order.service.domain.event.OrderCancelledEvent;
-import br.com.food.ordering.system.order.service.domain.ports.output.message.publisher.payment.OrderCancelledPaymentRequestMessagePublisher;
+import br.com.food.ordering.system.order.service.domain.event.publisher.DomainEventPublisher;
 import br.com.food.ordering.system.order.service.messaging.mapper.OrderMessagingDataMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class CancelOrderMessagePublisher implements OrderCancelledPaymentRequestMessagePublisher {
+public class CancelOrderMessagePublisher implements DomainEventPublisher<OrderCancelledEvent> {
 
     private final OrderMessagingDataMapper orderMessagingDataMapper;
     private final OrderServiceConfigData orderServiceConfigData;
