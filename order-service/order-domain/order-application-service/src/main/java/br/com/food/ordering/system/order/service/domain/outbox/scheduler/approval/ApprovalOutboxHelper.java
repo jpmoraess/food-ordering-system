@@ -1,10 +1,14 @@
 package br.com.food.ordering.system.order.service.domain.outbox.scheduler.approval;
 
 import br.com.food.ordering.system.order.service.domain.exception.OrderDomainException;
+import br.com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalEventPayload;
 import br.com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalOutboxMessage;
 import br.com.food.ordering.system.order.service.domain.ports.output.repository.ApprovalOutboxRepository;
+import br.com.food.ordering.system.order.service.domain.valueobject.OrderStatus;
 import br.com.food.ordering.system.outbox.OutboxStatus;
 import br.com.food.ordering.system.saga.SagaStatus;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,9 +24,12 @@ import static br.com.food.ordering.system.saga.order.SagaConstants.ORDER_SAGA_NA
 public class ApprovalOutboxHelper {
 
     private final ApprovalOutboxRepository approvalOutboxRepository;
+    private final ObjectMapper objectMapper;
 
-    public ApprovalOutboxHelper(ApprovalOutboxRepository approvalOutboxRepository) {
+    public ApprovalOutboxHelper(ApprovalOutboxRepository approvalOutboxRepository,
+                                ObjectMapper objectMapper) {
         this.approvalOutboxRepository = approvalOutboxRepository;
+        this.objectMapper = objectMapper;
     }
 
     @Transactional(readOnly = true)
@@ -51,8 +58,37 @@ public class ApprovalOutboxHelper {
     }
 
     @Transactional
+    public void saveApprovalOutboxMessage(OrderApprovalEventPayload orderApprovalEventPayload,
+                                          OrderStatus orderStatus,
+                                          SagaStatus sagaStatus,
+                                          OutboxStatus outboxStatus,
+                                          UUID sagaId) {
+        save(OrderApprovalOutboxMessage.builder()
+                .id(UUID.randomUUID())
+                .sagaId(sagaId)
+                .createdAt(orderApprovalEventPayload.getCreatedAt())
+                .type(ORDER_SAGA_NAME)
+                .payload(createPayload(orderApprovalEventPayload))
+                .orderStatus(orderStatus)
+                .sagaStatus(sagaStatus)
+                .outboxStatus(outboxStatus)
+                .build());
+    }
+
+    @Transactional
     public void deleteApprovalOutboxMessageByOutboxStatusAndSagaStatus(OutboxStatus outboxStatus,
                                                                        SagaStatus... sagaStatus) {
         approvalOutboxRepository.deleteByTypeAndOutboxStatusAndSagaStatus(ORDER_SAGA_NAME, outboxStatus, sagaStatus);
+    }
+
+    private String createPayload(OrderApprovalEventPayload orderApprovalEventPayload) {
+        try {
+            return objectMapper.writeValueAsString(orderApprovalEventPayload);
+        } catch (JsonProcessingException e) {
+            log.error("Could not create OrderApprovalEventPayload for order id: {}",
+                    orderApprovalEventPayload.getOrderId(), e);
+            throw new OrderDomainException("Could not create OrderApprovalEventPayload for order id: " +
+                    orderApprovalEventPayload.getOrderId(), e);
+        }
     }
 }

@@ -9,6 +9,9 @@ import br.com.food.ordering.system.order.service.domain.entity.Order;
 import br.com.food.ordering.system.order.service.domain.entity.Product;
 import br.com.food.ordering.system.order.service.domain.entity.Restaurant;
 import br.com.food.ordering.system.order.service.domain.event.OrderCreatedEvent;
+import br.com.food.ordering.system.order.service.domain.event.OrderPaidEvent;
+import br.com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalEventPayload;
+import br.com.food.ordering.system.order.service.domain.outbox.model.approval.OrderApprovalEventProduct;
 import br.com.food.ordering.system.order.service.domain.outbox.model.payment.OrderPaymentEventPayload;
 import br.com.food.ordering.system.order.service.domain.valueobject.*;
 import org.springframework.stereotype.Component;
@@ -62,6 +65,21 @@ public class OrderDataMapper {
                 .price(orderCreatedEvent.getOrder().getPrice().getAmount())
                 .createdAt(orderCreatedEvent.getCreatedAt())
                 .paymentOrderStatus(PaymentOrderStatus.PENDING.name())
+                .build();
+    }
+
+    public OrderApprovalEventPayload orderPaidEventToOrderApprovalEventPayload(OrderPaidEvent orderPaidEvent) {
+        return OrderApprovalEventPayload.builder()
+                .orderId(orderPaidEvent.getOrder().getId().getValue().toString())
+                .restaurantId(orderPaidEvent.getOrder().getRestaurantId().getValue().toString())
+                .restaurantOrderStatus(RestaurantOrderStatus.PAID.name())
+                .products(orderPaidEvent.getOrder().getItems().stream().map(orderItem ->
+                        OrderApprovalEventProduct.builder()
+                                .id(orderItem.getProduct().getId().getValue().toString())
+                                .quantity(orderItem.getQuantity())
+                                .build()).collect(Collectors.toList()))
+                .price(orderPaidEvent.getOrder().getPrice().getAmount())
+                .createdAt(orderPaidEvent.getCreatedAt())
                 .build();
     }
 
