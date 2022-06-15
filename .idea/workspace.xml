@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Refactoring Order domain layer: Adding Outbox Scheduler">
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/br/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxCleanerScheduler.java" afterDir="false" />
+    <list default="true" id="2ed438bf-7a9e-42f8-98c9-874af33091d7" name="Changes" comment="Refactoring Order domain layer: Adding Outbox cleaner scheduler for Payment">
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/br/com/food/ordering/system/order/service/domain/outbox/scheduler/approval/ApprovalOutboxHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/br/com/food/ordering/system/order/service/domain/outbox/scheduler/approval/RestaurantApprovalOutboxCleanerScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/br/com/food/ordering/system/order/service/domain/outbox/scheduler/approval/RestaurantApprovalOutboxScheduler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/br/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/br/com/food/ordering/system/order/service/domain/outbox/scheduler/payment/PaymentOutboxHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654134579143</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Implementing input ports in Order Application Service">
-      <created>1654273551971</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1654273551971</updated>
     </task>
     <task id="LOCAL-00014" summary="Implementing Order Track Command Handler">
       <created>1654277529849</created>
@@ -502,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655316247109</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Refactoring Order domain layer: Adding Outbox cleaner scheduler for Payment">
+      <created>1655316915285</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1655316915285</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Domain core module: Adding Exception and Domain events" />
     <MESSAGE value="Application Service domain module: Adding Mapper, Config and Ports" />
     <MESSAGE value="Application Service domain module: Implementing Input Ports - Part 1" />
     <MESSAGE value="Application Service domain module: Implementing Input Ports - Part 2" />
@@ -550,7 +550,8 @@
     <MESSAGE value="Updating Order Service database schema and config for Outbox Pattern" />
     <MESSAGE value="Refactoring Order domain layer: Adding Outbox models &amp; Updating Ports" />
     <MESSAGE value="Refactoring Order domain layer: Adding Outbox Scheduler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Order domain layer: Adding Outbox Scheduler" />
+    <MESSAGE value="Refactoring Order domain layer: Adding Outbox cleaner scheduler for Payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Order domain layer: Adding Outbox cleaner scheduler for Payment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
