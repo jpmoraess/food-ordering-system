@@ -8,6 +8,8 @@ import br.com.food.ordering.system.order.service.domain.dto.track.TrackOrderResp
 import br.com.food.ordering.system.order.service.domain.entity.Order;
 import br.com.food.ordering.system.order.service.domain.entity.Product;
 import br.com.food.ordering.system.order.service.domain.entity.Restaurant;
+import br.com.food.ordering.system.order.service.domain.event.OrderCreatedEvent;
+import br.com.food.ordering.system.order.service.domain.outbox.model.payment.OrderPaymentEventPayload;
 import br.com.food.ordering.system.order.service.domain.valueobject.*;
 import org.springframework.stereotype.Component;
 
@@ -49,6 +51,17 @@ public class OrderDataMapper {
                 .orderStatus(order.getOrderStatus())
                 .orderTrackingId(order.getTrackingId().getValue())
                 .failureMessages(order.getFailureMessages())
+                .build();
+    }
+
+    public OrderPaymentEventPayload orderCreatedEventToOrderPaymentEventPayload(OrderCreatedEvent orderCreatedEvent) {
+        return OrderPaymentEventPayload
+                .builder()
+                .customerId(orderCreatedEvent.getOrder().getCustomerId().getValue().toString())
+                .orderId(orderCreatedEvent.getOrder().getId().getValue().toString())
+                .price(orderCreatedEvent.getOrder().getPrice().getAmount())
+                .createdAt(orderCreatedEvent.getCreatedAt())
+                .paymentOrderStatus(PaymentOrderStatus.PENDING.name())
                 .build();
     }
 
